@@ -1,0 +1,47 @@
+{
+    "tarCall": false,
+    "features": {
+        "showPGResponseMsg": true,
+        "enableAbortResponse": true,
+        "enableNewWindowFlow": true,
+        "enableExpressPay": true,
+        "siDetailsAtMerchantEnd": true,
+        "enableSI": true
+    },
+    "consumerData": {
+        "deviceId": "WEBSH2",
+        "token": "b67412c750c5aae69b779e82271cc5998e7154d04f234f3d4c93902c56f66c5274b0972cf08b74680af31387fad20cd6ff3558cdcbe132b5572aa0c14085b156",
+        "returnUrl": "https://www.tekprocess.co.in/MerchantIntegrationClient/MerchantResponsePage.jsp",
+        "responseHandler": "handleResponse",
+        "paymentMode": "netBanking",
+        "merchantLogoUrl": "https://hooghlypay.com/NACHRegistration/loader.gif",
+        "merchantId": "L656504",
+        "currency": "INR",
+        "consumerId": "C8482701087",
+        "consumerMobileNo": "7338912115",
+        "consumerEmailId": "kprbala@gmail.com",
+        "txnId": "5363583617",
+        "items": [
+            {
+                "itemId": "FIRST",
+                "amount": "1",
+                "comAmt": "0"
+            }
+        ],
+        "customStyle": {
+            "PRIMARY_COLOR_CODE": "#45beaa",
+            "SECONDARY_COLOR_CODE": "#FFFFFF",
+            "BUTTON_COLOR_CODE_1": "#2d8c8c",
+            "BUTTON_COLOR_CODE_2": "#FFFFFF"
+        },
+        "accountNo": "23331",
+        "accountHolderName": "bala",
+        "ifscCode": "ICIC0002699",
+        "accountType": "Saving",
+        "debitStartDate": "10-11-2021",
+        "debitEndDate": "19-01-2022",
+        "maxAmount": "1",
+        "amountType": "M",
+        "frequency": "MNTH"
+    }
+}

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en" direction="ltr" style="direction: ltr;">	
+<head>
+<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1" / />
+<script src="https://www.paynimo.com/paynimocheckout/client/lib/jquery.min.js" type="text/javascript"></script>
+<style>
+
+h1 {
+  text-align: center;
+  font-size: 0.6em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1em;	
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 28px;
+    margin: 4px auto;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+	float: left;
+	
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 2px;
+    margin: 8px 10;
+    border: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {	
+	margin: auto;
+	position: absolute;
+	box-sizing: border-box;
+	border-radius: 24px;
+	margin: 1px 2px;
+	background-color: #f2f2f2;
+	padding: 50px 460px;
+	display: inline-block;
+}
+.loader {
+  position: fixed;
+  background-color: #FFF;
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+</style>
+
+    <h1 href="#"><img src="loader.gif" alt="HooghlyPay Enach Registration" /></h1>
+	<title>HooghlyPay Enach Registration</title>
+<h2 ><a color="MidnightBlue;"  style="font-family:corana;" href="#">NACH Registration Form</a></h2>
+
+</head>
+
+<body  style="background-color:LightBlue;">
+<div>
+<form action="/nach.py" method="post">
+
+Client MECode: <input style="text-align:left;" style="font-family:corana;"type = "text"placeholder="Enter Client Code" name = "ClientMECode" required> <br><br>
+Client Name: <input style="font-family:corana;" type = "text" name = "ClientName"placeholder="Enter Name" required> <br>
+Email: <input  style="font-family:corana;"type = "text" name = "Email"placeholder="Enter Email"required> <br><br>
+Mobile No: <input style="font-family:corana;" type = "text" name = "MobileNo"placeholder="Enter Mobile Number"required> <br><br>
+Bank Ac Holder Name: <input style="font-family:corana;" type = "text" name = "AcHolderName"placeholder="Enter Bank Ac Holder Name"required> <br><br>
+Bank Name: <input  style="font-family:corana;"type = "text" name = "Bank Name"placeholder="Enter Bank Name"required> <br><br>
+Branch Name: <input style="font-family:corana;" type = "text" name = "Branch Name"placeholder="Enter Bank Branch Name" required> <br><br>
+Bank A/c Number: <input style="font-family:corana;" type = "text" name = "Bank A/c Number"placeholder="Enter Account Number"required> <br><br>
+Re-Enter A/cNo: <input style="font-family:corana;" type = "hidden" name = "Re-Enter A/cNo"placeholder="Re Enter Account Number"required> <br><br>
+MICR: <input  style="font-family:corana;"type = "text" name = "MICR"placeholder="Enter MICR"required> <br><br>
+IFSC CODE: <input  style="font-family:corana;"type = "text" name = "IFSC CODE"placeholder="Enter IFSC Code"required> <br><br>
+
+<label for="Account Type">Account Type:</label>
+<select id="Account Type" name="Account Type"placeholder="Select Account Type"required>
+  <option value="Saving">Saving</option>
+  <option value="Current">Current</option>
+</select><br><br>
+
+<label for="Frequency">Frequency:</label>
+<select id="Frequency" name="Frequency"placeholder="Select Plan"required>
+  <option value="As and when presented">As and when presented</option>
+  <option value="DAIL">DAIL</option>
+  <option value="WEEK">WEEK</option>
+  <option value="MNTH">MNTH</option>
+  <option value="QURT">QURT</option>
+  <option value="MIAN">MIAN</option>
+  <option value="YEAR">YEAR</option>
+  <option value="BIMN">BIMN</option>
+  <option value="ADHO">As and when presented</option>
+  
+</select><br><br>
+<label for="Start">Start date:</label>
+<input  style="font-family:corana;"type="date" id="Start"placeholder="Select" name="Start"
+       value=""
+       min="2021-11-01" max="2030-12-31" required>
+	   
+<label for="End Date">End Date:</label>
+<input style="font-family:corana;" type="date" id="End Date"placeholder="Select EMI End Date" name="End Date"
+       value=""
+       min="2021-11-01" max="2030-12-31"required><br><br>
+
+Max Amount: <input  style="font-family:corana;"type = "text" name = "MaxAmount"placeholder="Enter Maximum Amount"required> <br><br>
+
+<input  type = "submit" value = "Confirm".reset() />
+</form>
+</div>
+</body>
+</html>

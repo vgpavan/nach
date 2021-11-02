@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+    <title>Checkout Demo</title>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1" />
+    <script src="https://www.paynimo.com/paynimocheckout/client/lib/jquery.min.js" type="text/javascript"></script>
+	
+</head>
+
+	<meta charset="UTF-8">
+
+	<style>
+		h3 {
+			text-align:center;
+		}
+
+		img {
+			display: block;
+			margin: center;
+			height: 150px;
+			width: 50px;
+			
+		}
+
+		.input {
+			margin: 6px;
+			padding: 1px;
+			display: block;
+			margin: auto;
+			color: palevioletred;
+			font-size: 30px;
+			
+		}
+
+		input {
+			width: 50%;
+			display: block;
+			margin-left: 120px;
+			background: lightgreen;
+			background-color: white;
+			
+		}
+
+		select {
+			width: 10%;
+			display: block;
+			margin-left: 1200px;
+			background: none;
+			background-color: lightblue;
+		}
+
+		#heading {
+			font-family:;
+			text-align:center;
+			color: blue;
+			padding-top: 10px;
+
+		}
+
+		#form_page {
+			height: 15px;
+			width: 60%;
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			margin: auto;
+
+		}
+
+		#form_body {
+			border-radius: 29px;
+			height: 1430px;
+			width: 1000px;
+			background-color: beige;
+			border: 2px solid pink;
+			margin: auto;
+			margin-top: 85px;
+		}
+
+		#text {
+			color: red;
+			width: 1500px;
+		}
+
+		#head {
+			border-bottom: 2px solid red;
+			height: 160px;
+			background-color: aliceblue;
+		}
+
+		#submit {
+			background-color: lightblue;
+			width: 70px;
+		}
+	</style>
+
+	
+<body>
+
+
+<form action = "nach.py" method = "Post">
+
+		<div id="form_page">
+
+			<div id="form_body">
+				<div id="head">
+					<h1 id="heading">Hooghly Pay</h1>
+					<h1 id="heading">NACH Registration Form</h1>
+				</div>
+
+Client Code: <input type = "text" name = "Client Code">
+Client Name: <input type = "text" name = "Client Name" />
+Email: <input type = "text" name = "Email" />
+Mobile No: <input type = "text" name = "Mobile No" /> 
+Bank A/c Holder Name: <input type = "text" name = "Bank A/c Holder Name" /> 
+Bank Name: <input type = "text" name = "Bank Name" />
+Branch Name: <input type = "text" name = "Branch Name" />
+Bank A/c Number: <input type = "text" name = "Bank A/c Number" /> 
+Re-Enter A/cNo: <input type = "text" name = "Re-Enter A/cNo" />
+MICR: <input type = "text" name = "MICR" />
+IFSC CODE: <input type = "text" name = "IFSC CODE" /> 
+Account Type: <input type = "text" name = "Account Type" /> 
+Start Date: <input type = "text" name = "Start Date" /> 
+End Date: <input type = "text" name = "End Date" /> 
+Max Amount: <input type = "text" name = "Max Amount" /> 
+Frequency: <input type = "text" name = "Frequency" />
+
+<input type = "submit" value = "Submit".reset() />
+<HR WIDTH="100%">
+</form>
